@@ -4,7 +4,8 @@
   "description": "common functionality",
   "license": "MIT",
   "scripts": {
-      "compile": "babel --presets es2015 -d dist/ src/"
+    "compile": "babel --presets es2015 -d dist/ src/",
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
