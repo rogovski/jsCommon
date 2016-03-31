@@ -20,6 +20,10 @@ var _immutable = require('./util/immutable');
 
 var _immutable2 = _interopRequireDefault(_immutable);
 
+var _promise = require('./util/promise');
+
+var _promise2 = _interopRequireDefault(_promise);
+
 var _object = require('./validation/object');
 
 var _object2 = _interopRequireDefault(_object);
@@ -54,7 +58,8 @@ exports.default = {
   util: {
     definer: _definer2.default,
     lodash: _lodash2.default,
-    immutable: _immutable2.default
+    immutable: _immutable2.default,
+    promise: _promise2.default
   },
   validation: {
     obj: _object2.default,

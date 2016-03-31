@@ -12,8 +12,9 @@
     "url": "https://github.com/rogovski/jsCommon.git"
   },
   "dependencies": {
-    "lodash": "^4.3.0",
+    "bluebird": "^3.3.4",
     "immutable": "^3.7.6",
+    "lodash": "^4.3.0",
     "node-uuid": "^1.4.7"
   },
   "devDependencies": {
