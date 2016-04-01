@@ -28,5 +28,11 @@ export default class EVENT {
     definer.public.readonly(this,
       'correlationId', _options.correlationId || null
     );
+    /*
+     * command data
+     */
+    definer.public.readonly(this,
+      'data', _options.data || {}
+    );
   }
 }

@@ -19,5 +19,11 @@ export default class COMMAND {
     definer.public.readonly(this,
       'timestamp', _options.timestamp || Date.now()
     );
+    /*
+     * command data
+     */
+    definer.public.readonly(this,
+      'data', _options.data || {}
+    );
   }
 }
