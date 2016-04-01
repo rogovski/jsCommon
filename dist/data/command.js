@@ -32,6 +32,10 @@ var COMMAND = function COMMAND(options) {
    * command timestamp
    */
   _definer2.default.public.readonly(this, 'timestamp', _options.timestamp || Date.now());
+  /*
+   * command data
+   */
+  _definer2.default.public.readonly(this, 'data', _options.data || {});
 };
 
 exports.default = COMMAND;

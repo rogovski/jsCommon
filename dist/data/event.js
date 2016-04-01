@@ -38,6 +38,10 @@ var EVENT = function EVENT(options) {
    * correlation id
    */
   _definer2.default.public.readonly(this, 'correlationId', _options.correlationId || null);
+  /*
+   * command data
+   */
+  _definer2.default.public.readonly(this, 'data', _options.data || {});
 };
 
 exports.default = EVENT;
