@@ -42,7 +42,13 @@ var _command2 = _interopRequireDefault(_command);
 
 var _either = require('./data/either');
 
-var _either2 = _interopRequireDefault(_either);
+var either = _interopRequireWildcard(_either);
+
+var _schema = require('./data/schema');
+
+var _schema2 = _interopRequireDefault(_schema);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -53,7 +59,8 @@ exports.default = {
   data: {
     COMMAND: _command2.default,
     EVENT: _event2.default,
-    either: _either2.default
+    either: either,
+    schema: _schema2.default
   },
   util: {
     definer: _definer2.default,
