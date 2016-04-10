@@ -8,6 +8,7 @@ import valinv      from './validation/invariant';
 import eventobj    from './data/event';
 import cmdobj      from './data/command';
 import * as either from './data/either';
+import * as excep  from './data/exception';
 import schema      from './data/schema';
 
 
@@ -19,7 +20,8 @@ export default {
     COMMAND: cmdobj,
     EVENT: eventobj,
     either: either,
-    schema: schema
+    schema: schema,
+    exception: excep
   },
   util: {
     definer: definer,

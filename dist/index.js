@@ -44,6 +44,10 @@ var _either = require('./data/either');
 
 var either = _interopRequireWildcard(_either);
 
+var _exception = require('./data/exception');
+
+var excep = _interopRequireWildcard(_exception);
+
 var _schema = require('./data/schema');
 
 var _schema2 = _interopRequireDefault(_schema);
@@ -60,7 +64,8 @@ exports.default = {
     COMMAND: _command2.default,
     EVENT: _event2.default,
     either: either,
-    schema: _schema2.default
+    schema: _schema2.default,
+    exception: excep
   },
   util: {
     definer: _definer2.default,
