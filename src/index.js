@@ -10,7 +10,7 @@ import cmdobj      from './data/command';
 import * as either from './data/either';
 import * as excep  from './data/exception';
 import schema      from './data/schema';
-
+import moment      from './util/moment';
 
 export default {
   crypto: {
@@ -27,7 +27,8 @@ export default {
     definer: definer,
     lodash: lodash,
     immutable: immutable,
-    promise: promise
+    promise: promise,
+    moment: moment
   },
   validation: {
     obj: valobj,

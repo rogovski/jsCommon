@@ -52,6 +52,10 @@ var _schema = require('./data/schema');
 
 var _schema2 = _interopRequireDefault(_schema);
 
+var _moment = require('./util/moment');
+
+var _moment2 = _interopRequireDefault(_moment);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -71,7 +75,8 @@ exports.default = {
     definer: _definer2.default,
     lodash: _lodash2.default,
     immutable: _immutable2.default,
-    promise: _promise2.default
+    promise: _promise2.default,
+    moment: _moment2.default
   },
   validation: {
     obj: _object2.default,
