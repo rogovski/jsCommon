@@ -68,3 +68,18 @@ var SingleResultNotReturnedError = exports.SingleResultNotReturnedError = functi
 
   return SingleResultNotReturnedError;
 }(ExtendableError);
+
+var InvalidConstructorArgsError = exports.InvalidConstructorArgsError = function (_ExtendableError3) {
+  _inherits(InvalidConstructorArgsError, _ExtendableError3);
+
+  function InvalidConstructorArgsError(message, errors) {
+    _classCallCheck(this, InvalidConstructorArgsError);
+
+    var _this4 = _possibleConstructorReturn(this, Object.getPrototypeOf(InvalidConstructorArgsError).call(this, message));
+
+    _this4.errors = errors || [];
+    return _this4;
+  }
+
+  return InvalidConstructorArgsError;
+}(ExtendableError);

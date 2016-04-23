@@ -11,3 +11,17 @@ describe('crypto: uuid', function () {
     }
   );
 });
+
+describe('data: exception', function () {
+  it(
+    'have errors field',
+    function () {
+
+      assert.throws(function () {
+        throw new common.data.exception.InvalidConstructorArgsError('yoyo');
+      }, Error);
+
+      assert.equal(common.crypto.uuid.v4().length, 36);
+    }
+  );
+});

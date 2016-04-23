@@ -34,3 +34,11 @@ export class SingleResultNotReturnedError extends ExtendableError {
     this.fields = fields || {};
   }
 }
+
+
+export class InvalidConstructorArgsError extends ExtendableError {
+  constructor(message, errors) {
+    super(message);
+    this.errors = errors || [];
+  }
+}
