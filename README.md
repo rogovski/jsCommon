@@ -1,2 +1,2 @@
 # jsCommon
-common javascript functionality
+common javascript functionality.
